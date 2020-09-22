@@ -12,6 +12,33 @@
 
 <STRING_L>      ::= """ ALL_ASCII_CHARACTERS+ """
 
+<MUL>           ::= "*"
+
+<DIV>           ::= "/"
+
+<PLUS>          ::= "+"
+
+<MINUS>         ::= "-"
+
+<MOD>           ::= "%"
+
+<ASSGN>         ::= "="
+
+<BIT_OR>        ::= "|"
+
+<BIT_AND>       ::= "&"
+
+<BIT_XOR>       ::= "^"
+
+<GT>            ::= ">"
+
+<SAR>           ::= ">>"
+
+<SHR>           ::= ">>>"
+
+<LT>            ::= "<"
+
+<SHL>           ::= "<<"
 
 
 
