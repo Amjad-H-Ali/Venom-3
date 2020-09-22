@@ -2,98 +2,111 @@
  
 ** LEXER **
 
-<DIGIT>         ::= "0" | ... | "9" ;
+<DIGIT>                  ::= "0" | ... | "9" ;
 
-<CHAR_L>        ::= "'" ALL_ASCII_CHARACTERS "'" ;
+<LETTER>                 ::=   "A" | "B" | "C" | "D" | "E" | "F" | "G"
+                             | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+                             | "O" | "P" | "Q" | "R" | "S" | "T" | "U"
+                             | "V" | "W" | "X" | "Y" | "Z" | "a" | "b"
+                             | "c" | "d" | "e" | "f" | "g" | "h" | "i"
+                             | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+                             | "q" | "r" | "s" | "t" | "u" | "v" | "w"
+                             | "x" | "y" | "z" ;
 
-<INT_L>         ::= <DIGIT>+ ;
+<LETTER_OR_UNDERSCORE>   ::= <LETTER> | "_" ;
 
-<LONG_L>        ::= <DIGIT>+ ;
+<CHAR_L>                 ::= "'" ALL_ASCII_CHARACTERS "'" ;
 
-<STRING_L>      ::= """ ALL_ASCII_CHARACTERS+ """
+<INT_L>                  ::= <DIGIT>+ ;
 
-<MUL>           ::= "*"
+<LONG_L>                 ::= <DIGIT>+ ;
 
-<DIV>           ::= "/"
+<STRING_L>               ::= """ ALL_ASCII_CHARACTERS+ """
 
-<PLUS>          ::= "+"
+<MUL>                    ::= "*"
 
-<MINUS>         ::= "-"
+<DIV>                    ::= "/"
 
-<MOD>           ::= "%"
+<PLUS>                   ::= "+"
 
-<ASSGN>         ::= "="
+<MINUS>                  ::= "-"
 
-<BIT_OR>        ::= "|"
+<MOD>                    ::= "%"
 
-<BIT_AND>       ::= "&"
+<ASSGN>                  ::= "="
 
-<BIT_XOR>       ::= "^"
+<BIT_OR>                 ::= "|"
 
-<GT>            ::= ">"
+<BIT_AND>                ::= "&"
 
-<SAR>           ::= ">>"
+<BIT_XOR>                ::= "^"
 
-<SHR>           ::= ">>>"
+<GT>                     ::= ">"
 
-<LT>            ::= "<"
+<SAR>                    ::= ">>"
 
-<SHL>           ::= "<<"
+<SHR>                    ::= ">>>"
 
-<NOT>           ::= "!"       
+<LT>                     ::= "<"
 
-<MUL_EQ>        ::= "*="  
+<SHL>                    ::= "<<"
 
-<EXP>           ::= "**"
+<NOT>                    ::= "!"       
 
-<LPARAN>        ::= "("  
+<MUL_EQ>                 ::= "*="  
 
-<RPARAN>        ::= ")"
+<EXP>                    ::= "**"
 
-<LBRACE>        ::= "{"
+<LPARAN>                 ::= "("  
 
-<RBRACE>        ::= "}"
+<RPARAN>                 ::= ")"
 
-<SEMI_COL>      ::= ";"
+<LBRACE>                 ::= "{"
 
-<COMMA>         ::= ","
+<RBRACE>                 ::= "}"
 
-<BIT_NOT>       ::= "~"
+<SEMI_COL>               ::= ";"
 
-<DIV_EQ>        ::= "/="
+<COMMA>                  ::= ","
 
-<PLUS_EQ>       ::= "+="
+<BIT_NOT>                ::= "~"
 
-<INC>           ::= "++"
+<DIV_EQ>                 ::= "/="
 
-<MINUS_EQ>      ::= "-="
+<PLUS_EQ>                ::= "+="
 
-<DEC>           ::= "--"
+<INC>                    ::= "++"
 
-<MOD_EQ>        ::= "%="
+<MINUS_EQ>               ::= "-="
 
-<EQ>            ::= "=="
+<DEC>                    ::= "--"
 
-<BIT_OR_EQ>     ::= "|="
+<MOD_EQ>                 ::= "%="
 
-<LOGIC_OR>      ::= "||"
+<EQ>                     ::= "=="
 
-<BIT_AND_EQ>    ::= "&="
+<BIT_OR_EQ>              ::= "|="
 
-<LOGIC_AND>     ::= "&&"
+<LOGIC_OR>               ::= "||"
 
-<BIT_XOR_EQ>    ::= "^="
+<BIT_AND_EQ>             ::= "&="
 
-<GT_EQ>         ::= ">="
+<LOGIC_AND>              ::= "&&"
 
-<SAR_EQ>        ::= ">>="
+<BIT_XOR_EQ>             ::= "^="
 
-<SHR_EQ>        ::= ">>>=" 
+<GT_EQ>                  ::= ">="
 
-<LT_EQ>         ::= "<="
+<SAR_EQ>                 ::= ">>="
 
-<SHL_EQ>        ::= "<<=" 
+<SHR_EQ>                 ::= ">>>=" 
 
-<NOT_EQ>        ::= "!="
+<LT_EQ>                  ::= "<="
 
-<FAT_ARROW>     ::= "=>"
+<SHL_EQ>                 ::= "<<=" 
+
+<NOT_EQ>                 ::= "!="
+
+<FAT_ARROW>              ::= "=>"
+
+<VAR>                    ::= <LETTER_OR_UNDERSCORE>+ <DIGIT>+? 
