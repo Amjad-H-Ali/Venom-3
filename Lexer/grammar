@@ -1,0 +1,15 @@
+*** BACKUS-NAUR FORM ***
+ 
+** LEXER **
+
+<DIGIT>         ::= "0" | ... | "9" ;
+
+<CHAR_L>        ::= "'" ALL_ASCII_CHARACTERS "'" ;
+
+<INT_L>         ::= <DIGIT>+ ;
+
+<LONG_L>        ::= <DIGIT>+ ;
+
+
+
+
