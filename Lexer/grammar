@@ -10,6 +10,8 @@
 
 <LONG_L>        ::= <DIGIT>+ ;
 
+<STRING_L>      ::= """ ALL_ASCII_CHARACTERS+ """
+
 
 
 
