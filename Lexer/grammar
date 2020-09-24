@@ -115,3 +115,12 @@
 
 <IS>                     ::= "is"
 
+<BOOL>                   ::= "bool"
+
+<CHAR>                   ::= "char"
+
+<SHORT>                  ::= "short"
+
+<INT>                    ::= "int"
+
+<LONG>                   ::= "long"
