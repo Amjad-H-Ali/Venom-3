@@ -110,3 +110,5 @@
 <FAT_ARROW>              ::= "=>"
 
 <VAR>                    ::= <LETTER_OR_UNDERSCORE>+ <DIGIT>+? 
+
+<IS>                     ::= is
