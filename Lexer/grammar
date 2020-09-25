@@ -124,3 +124,13 @@
 <INT>                    ::= "int"
 
 <LONG>                   ::= "long"
+
+<ELSE>                   ::= "else"
+
+<FOR>                    ::= "for"
+
+<IF>                     ::= "if"
+
+<RETURN>                 ::= "return"
+
+<VOID>                   ::= "void"
