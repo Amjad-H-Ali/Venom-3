@@ -15,8 +15,6 @@
 
 <LETTER_OR_UNDERSCORE>   ::= <LETTER> | "_" ;
 
-<BOOL_L>                 ::= "true" | "false" ;
-
 <CHAR_L>                 ::= "'" ALL_ASCII_CHARACTERS "'" ;
 
 <INT_L>                  ::= <DIGIT>+ ;
@@ -134,3 +132,8 @@
 <RETURN>                 ::= "return"
 
 <VOID>                   ::= "void"
+
+<TRUE>                   ::= "true"
+
+<FALSE>                  ::= "false"
+
